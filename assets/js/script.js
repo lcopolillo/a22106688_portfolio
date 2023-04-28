@@ -46,7 +46,8 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', showHideSkills)
 })
 
-/*qualification active/non active tabs*/
+/*qualification active/non active tabs (NAO FUNCIONA)
+
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -64,4 +65,4 @@ tabs.forEach(tab => {
         })
         tab.classList.add('qualification_active')
     })
-})
+}) */
