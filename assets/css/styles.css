@@ -349,6 +349,21 @@ img {
   align-items: center;
 }
 
+.button_small{
+  padding: 0.75rem 1rem;  
+}
+
+.button_link{
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button_link:hover{
+    background-color: transparent;
+    color: var(--first-color-alt);
+}
+
 /*about*/
 .about_img {
   width: 200px;
@@ -574,7 +589,129 @@ img {
 
 /*webdev*/
 
-/*active modal???*/
+.webdev_container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: var(--mb-2-5);
+}
+
+.webdev_content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.webdev_content:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.webdev_icon{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.webdev_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+
+.webdev_button{
+   cursor: pointer;
+   font-size: var(--small-font-size);
+}
+
+.webdev_button:hover .button_icon{
+  transform: translateX(0.25rem);
+}
+
+.webdev_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s
+}
+
+.webdev_modal_content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;  
+}
+
+.webdev_modal_content > p{
+  text-align: center;
+}
+
+
+.webdev_modal_services{
+  row-gap: 1rem;
+}
+
+.webdev_modal_service{
+  display: flex;
+}
+
+.webdev_modal_service_link{
+  color: var(--first-color);
+}
+
+.webdev_modal_title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.webdev_modal_description{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-top: var(--mb-1-5);
+  text-align: center;
+}
+
+.webdev_modal_close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.webdev_modal_icon{
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+
+.webdev_button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: .5rem;
+}
+
+/*active webdev modal*/
+
+.active_modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*portfolio*/
 
