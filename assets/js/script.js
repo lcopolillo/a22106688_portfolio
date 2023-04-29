@@ -67,6 +67,21 @@ tabs.forEach(tab => {
     })
 }) */
 
+
+/*swiper*/
+let swiper = new Swiper(".portfolio_container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
 /*webdev modal*/
 const modalViews = document.querySelectorAll('.webdev_modal'),
       modalButtons = document.querySelectorAll('.webdev_button'),
