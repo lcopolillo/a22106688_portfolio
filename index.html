@@ -28,7 +28,7 @@
       <div class="nav_menu" id="nav_menu">
         <ul class="nav_list grid">
           <li class="nav_item">
-            <a href="#home" class="nav_link">
+            <a href="#home" class="nav_link active_link">
               <i class="uil uil-estate nav_icon"></i> Home
             </a>
           </li>
@@ -456,7 +456,7 @@
       </div>
     </section>
 
-    <!--portfolio UNDONE-->
+    <!--portfolio DONE-->
     <section class="portfolio section" id="portfolio">
       <h2 class="section_title">Portfolio</h2>
       <span class="section_subtitle">My Projects</span>
@@ -478,8 +478,8 @@
             </div>
           </div>
 
-           <!--2-->
-           <div class="portfolio_content grid swiper-slide">
+          <!--2-->
+          <div class="portfolio_content grid swiper-slide">
             <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
@@ -493,8 +493,8 @@
             </div>
           </div>
 
-           <!--3-->
-           <div class="portfolio_content grid swiper-slide">
+          <!--3-->
+          <div class="portfolio_content grid swiper-slide">
             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
@@ -941,22 +941,138 @@
 
     </section>
 
-    <!--blog UNDONE-->
+    <!--blog DONE-->
     <section class="blog section" id="blog">
-      
+      <div class="blog_bg">
+        <div class="blog_container container grid">
+          <div class="blog_data">
+            <h2 class="blog_title">My Blog!</h2>
+            <p class="blog_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
+              exercitationem!</p>
+            <a href="#" class="button button_flex button_white">
+              Explore
+              <i class="uil uil-smile-wink-alt blog_icon button_icon"></i>
+            </a>
+          </div>
+
+          <img src="#" alt="">
+        </div>
+      </div>
     </section>
 
     <!--this website UNDONE-->
-    <section class="website section" id="website"></section>
+    <section class="website section" id="website">
+      <h2 class="section_title">This website</h2>
+      <span class="section_subtitle">Tools I Used</span>
+      <p class="section_subtitle">(in progress...)</p>
+    </section>
 
-    <!--contact UNDONE-->
-    <section class="contact section" id="contact"></section>
+    <!--contact DONE-->
+    <section class="contact section" id="contact">
+      <h2 class="section_title">Contact Me</h2>
+      <span class="section_subtitle">Wanna talk to me?</span>
+
+      <div class="contact_container container grid">
+        <div>
+          <div class="contact_information">
+            <i class="uil uil-phone contact_icon"></i>
+
+            <div>
+              <div class="contact_title">Mobile:</div>
+              <span class="contact_subtitle">+351 962412557</span>
+            </div>
+          </div>
+          <div class="contact_information">
+            <i class="uil uil-envelope contact_icon"></i>
+
+            <div>
+              <div class="contact_title">E-mal:</div>
+              <span class="contact_subtitle">lcopolillo@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact_information">
+            <i class="uil uil-map-marker contact_icon"></i>
+
+            <div>
+              <div class="contact_title">Location:</div>
+              <span class="contact_subtitle">Lisbon, Portugal</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact_form grid">
+          <div class="contact_inputs grid">
+            <div class="contact_content">
+              <label class="contact_label">Name</label>
+              <input type="text" class="contact_input">
+            </div>
+            <div class="contact_content">
+              <label class="contact_label">E-mail</label>
+              <input type="email" class="contact_input">
+            </div>
+          </div>
+          <div class="contact_content">
+            <label class="contact_label">Subject</label>
+            <input type="text" class="contact_input">
+          </div>
+          <div class="contact_content">
+            <label class="contact_label">Message</label>
+            <textarea class="contact_input" name="" id="" cols="0" rows="7"></textarea>
+
+          </div>
+
+          <a href="#" class="button button_flex">
+            Send
+            <i class="uil uil-message button_icon"></i>
+          </a>
+        </form>
+      </div>
+    </section>
+
   </main>
 
-  <!--footer UNDONE-->
-  <footer class="footer"></footer>
+  <!--footer DONE-->
+  <footer class="footer">
+    <div class="footer_bg">
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">Luiza Vidal</h1>
+          <span class="footer_subtitle">Computer Engineering</span>
+        </div>
+
+        <ul class="footer_links">
+          <li>
+            <a href="#home" class="footer_link">Home</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer_link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer_link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer_socials">
+
+          <a href="https://www.linkedin.com/in/lcopolillo/" target="_blank" class="footer_social">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a href="https://github.com/lcopolillo" target="_blank" class="footer_social">
+            <i class="uil uil-github-alt"></i>
+          </a>
+          <a href="https://wa.me/351962412557" target="_blank" class="footer_social">
+            <i class="uil uil-whatsapp"></i>
+        </div>
+      </div>
+
+      <p class="footer_copyright">&copy; Luiza Vidal, ULHT | 2023</p>
+    </div>
+  </footer>
 
   <!--scroll top-->
+  <a href="#" class="scrollup" id="scroll_up">
+    <i class="uil uil-angle-up scrollup_icon"></i>
+  </a>
 
   <!--swiper js=-->
   <script src="assets/js/swiper-bundle.min.js"></script>
