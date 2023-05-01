@@ -2,6 +2,12 @@
 
 # Portfolio I (In progress)
 
+### !!! 
+- This project is still in progress, which means I still have a lot of changes to make. 
+- Some images are taken from the Unsplash website to improve the presentation;
+- Some texts are in Latin so that there are no spaces to fill; 
+- In general, the final design of the site will look like this, or very close to it. :)
+
 ### Introduction
 
 Welcome to my Personal Portfolio Repository! Here, you can witness the evolution of my skills in Web Programming during my second year of Computer Engineering degree program. This website is designed to showcase my skills and projects that I have developed during my course. It is a dynamic and responsive website design.
