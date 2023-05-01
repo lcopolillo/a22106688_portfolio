@@ -85,6 +85,7 @@
   <main class="main">
     <!--home DONE-->
     <section class="home section" id="home">
+
       <div class="home_container container grid">
         <div class="home_content grid">
           <div class="home_social">
@@ -98,6 +99,12 @@
               <i class="uil uil-whatsapp"></i>
             </a>
           </div>
+
+
+          <div class="home_img2">
+            <img src="assets/img/profileLinkedin.jfif" alt="">
+          </div>
+          
 
           <!-- <div class="home_img">
             <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
@@ -113,10 +120,10 @@
                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                <image class="home_blob_image" x="12" y="18" xlink:href="" />
+                <image class="home_blob_image" xlink:href="" />
               </g>
             </svg>
-          </div> -->
+          </div>  -->
 
           <div class="home_data">
             <h1 class="home_title">Hi, I'm Luiza</h1>
@@ -128,6 +135,7 @@
               Get in touch <i class="uil uil-message button_icon"></i>
             </a>
           </div>
+
         </div>
       </div>
     </section>
@@ -559,6 +567,15 @@
               <span class="contact_subtitle">Lisbon, Portugal</span>
             </div>
           </div>
+
+          <div class="contact_information">
+            <i class="uil uil-calendar-alt contact_icon"></i>
+
+            <div>
+              <div class="contact_title">Today:</div>
+              <p><span id="todays_date"></span></p>
+            </div>
+          </div>
         </div>
 
         <form action="" class="contact_form grid">
@@ -636,6 +653,42 @@
   </footer>
 
 
+
+  <!--date-->
+  <script>
+    const date = document.getElementById("todays_date");
+    const months = [
+      'janeiro',
+      'fevereiro',
+      'março',
+      'abril',
+      'maio',
+      'junho',
+      'julho',
+      'agosto',
+      'setembro',
+      'outubro',
+      'novembro',
+      'dezembro'
+      // "January",
+      // "February",
+      // "March",
+      // "April",
+      // "May",
+      // "June",
+      // "July",
+      // "August",
+      // "September",
+      // "October",
+      // "November",
+      // "December",
+    ];
+    const todaysDate = new Date();
+    const day = todaysDate.getDate();
+    const month = months[todaysDate.getMonth()];
+    const year = todaysDate.getFullYear();
+
+    date.textContent = `${day} de ${month}, ${year}`;</script>
 
   <!--scroll top-->
   <a href="#" class="scrollup" id="scroll_up">

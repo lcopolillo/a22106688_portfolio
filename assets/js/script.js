@@ -175,24 +175,24 @@ themeButton.addEventListener("click", () => {
 });
 
 /*CALCULATOR*/
-const display = document.querySelector('.calculator_display');
-const buttons = document.querySelectorAll('.calculator_buttons');
-const specialChars = ["%", "*", "+", "-", "/", "="]
+const display = document.querySelector(".calculator_display");
+const buttons = document.querySelectorAll(".calculator_buttons");
+const specialChars = ["%", "*", "+", "-", "/", "="];
 let output = "";
 
 const calculate = (btnValue) => {
-  if(btnValue === "=" && output !==""){
+  if (btnValue === "=" && output !== "") {
     // fazer porcentagem
-    output = eval(output.replace("%", "/100"))
-  } else if(btnValue == "AC"){
-    // limpar input 
-    output = ""
-  } else if(btnValue === "DEL"){
+    output = eval(output.replace("%", "/100"));
+  } else if (btnValue == "AC") {
+    // limpar input
+    output = "";
+  } else if (btnValue === "DEL") {
     // limpar ultimo caracter do input
     output = output.toString().slice(0, -1);
-  }else{
-    if(output == "" && specialChars.includes(btnValue)) return;
-    output += btnValue
+  } else {
+    if (output == "" && specialChars.includes(btnValue)) return;
+    output += btnValue;
   }
   display.value = output;
 };
@@ -200,3 +200,32 @@ const calculate = (btnValue) => {
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
+
+/*INSPIRING PHRASE*/
+const fraseInput = document.getElementById("phrase_input");
+const submitBtn = document.getElementById("submit_btn");
+const fraseContainer = document.querySelector(".insp_phrase_container");
+
+submitBtn.addEventListener("click", function () {
+  const frase = fraseInput.value;
+  const fraseElement = document.createElement("p");
+  fraseElement.textContent = frase;
+  fraseContainer.appendChild(fraseElement);
+  fraseInput.value = "";
+});
+
+/*name input*/
+const nomeInput = document.getElementById("name_input");
+const nomeSpan1 = document.getElementById("name_span1");
+const nomeSpan2 = document.getElementById("name_span2");
+const nomeSpan3 = document.getElementById("name_span3");
+
+nomeInput.addEventListener("input", function () {
+  const nome = nomeInput.value;
+  nomeSpan1.textContent = nome;
+  nomeSpan2.textContent = nome;
+  nomeSpan3.textContent = nome;
+});
+
+
+
