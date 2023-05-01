@@ -145,3 +145,58 @@ function scrollUp() {
   else scrollUp.classList.remove("show_scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+/*dark/light theme*/
+const themeButton = document.getElementById("theme_button");
+const darkTheme = "dark_theme";
+const iconTheme = "uil-sun";
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+/*CALCULATOR*/
+const display = document.querySelector('.calculator_display');
+const buttons = document.querySelectorAll('.calculator_buttons');
+const specialChars = ["%", "*", "+", "-", "/", "="]
+let output = "";
+
+const calculate = (btnValue) => {
+  if(btnValue === "=" && output !==""){
+    // fazer porcentagem
+    output = eval(output.replace("%", "/100"))
+  } else if(btnValue == "AC"){
+    // limpar input 
+    output = ""
+  } else if(btnValue === "DEL"){
+    // limpar ultimo caracter do input
+    output = output.toString().slice(0, -1);
+  }else{
+    if(output == "" && specialChars.includes(btnValue)) return;
+    output += btnValue
+  }
+  display.value = output;
+};
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+});
