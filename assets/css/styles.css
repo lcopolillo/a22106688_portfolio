@@ -171,6 +171,13 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.section_paragraph{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-75);
+  text-align: center;
+}
+
 .section_title,
 .section_subtitle {
   text-align: center;
@@ -1066,10 +1073,16 @@ img {
   border-radius: 0.5rem;
   border: none;
   font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s all 0s ease;
+}
+
+.calculator_buttons button:hover{
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .calculator_buttons button:active{
-  transform: scale(0.99);
+  transform: scale(0.9);
 }
 
 .operator{
@@ -1134,7 +1147,60 @@ input[type="text"] {
 .name_container{
   text-align: center;
 }
+/*parallax*/
 
+.parallax_wrapper {
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.parallax_container {
+  min-height: 200px;
+  background-image: url('../img/tay3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax_info {
+  margin-bottom: var(--mb-3);
+  margin-right: 1rem;
+  max-width: 80%;
+}
+
+p.parallax_info {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: var(--mb-1);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+  padding: 1rem;
+  color: var(--title-color);
+  background-color: var(--input-color);
+  border-radius: 1.25rem;
+}
+
+/*video*/
+.video p{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-1-5);
+}
+
+.video_container{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+/*svg*/
+.svg_rainbow{
+  width: 400px;
+  margin: 10% auto;
+  display: block;
+}
 
 /*media queries*/
 @media screen and (min-width: 568px) {
