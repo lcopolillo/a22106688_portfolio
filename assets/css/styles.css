@@ -171,15 +171,15 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.section_paragraph{
+.section_paragraph {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-0-75);
-  text-align: center;
 }
 
 .section_title,
-.section_subtitle {
+.section_subtitle,
+.section_paragraph {
   text-align: center;
 }
 
@@ -369,13 +369,13 @@ img {
   font-size: 1.25rem;
 }
 
-.home_img2{
+.home_img2 {
   width: 270px;
 }
 
-.home_img2 img{
+.home_img2 img {
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 /*buttons*/
 .button {
@@ -896,7 +896,7 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.home_blog_data{
+.home_blog_data {
   text-align: center;
 }
 
@@ -1026,29 +1026,29 @@ img {
 }
 
 /*playground*/
-.playground_title{
+.playground_title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
 /*calculator*/
-.calculator_container{
+.calculator_container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.calculator_content{
+.calculator_content {
   position: relative;
   max-width: 300px;
   width: 100%;
   border-radius: 1.5rem;
   padding: 1rem 2rem 1rem;
   background-color: var(--body-color);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.calculator_display{
+.calculator_display {
   height: 4rem;
   width: 100%;
   outline: none;
@@ -1062,13 +1062,13 @@ img {
   pointer-events: none;
 }
 
-.calculator_buttons{
+.calculator_buttons {
   display: grid;
   grid-gap: 0.9rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.calculator_buttons button{
+.calculator_buttons button {
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
@@ -1077,20 +1077,20 @@ img {
   transition: 0.3s all 0s ease;
 }
 
-.calculator_buttons button:hover{
+.calculator_buttons button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.calculator_buttons button:active{
+.calculator_buttons button:active {
   transform: scale(0.9);
 }
 
-.operator{
+.operator {
   background-color: var(--first-color-alt);
   color: #fff;
 }
 
-.number{
+.number {
   background-color: var(--text-color-light);
   color: #fff;
 }
@@ -1139,12 +1139,12 @@ input[type="text"] {
   font-family: var(--body-font);
 }
 
-.insp_button:hover{
+.insp_button:hover {
   background-color: var(--first-color-alt);
 }
 
 /*name input*/
-.name_container{
+.name_container {
   text-align: center;
 }
 /*parallax*/
@@ -1157,7 +1157,7 @@ input[type="text"] {
 
 .parallax_container {
   min-height: 200px;
-  background-image: url('../img/tay3.jpg');
+  background-image: url("../img/tay3.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1183,20 +1183,20 @@ p.parallax_info {
 }
 
 /*video*/
-.video p{
+.video p {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-top: var(--mb-1-5);
 }
 
-.video_container{
+.video_container {
   display: flex;
   align-self: center;
   justify-content: center;
 }
 
 /*svg*/
-.svg_rainbow{
+.svg_rainbow {
   width: 400px;
   margin: 10% auto;
   display: block;
